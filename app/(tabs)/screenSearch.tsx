@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
 
-export default function TabScreenHome() {
+export default function TabScreenSearch() {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Tab [Home|Settings]</Text>

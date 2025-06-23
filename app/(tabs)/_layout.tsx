@@ -1,21 +1,46 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
+import {MaterialIcons } from '@expo/vector-icons/';
 import { Tabs } from 'expo-router';
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
+    <Tabs screenOptions={{ 
+      
+      tabBarActiveTintColor: 'blue',
+      headerShown: false,
+      }}>
       <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="home" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="screenSearch"
         options={{
-          title: 'Settings',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
+          title: 'buscar',
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="search" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+      name='screenCreate'
+      options={{
+        title: 'Create',
+        tabBarIcon: ({ color }) => <MaterialIcons size={28} name="add-box" color={color} />,
+      }}
+      />
+        <Tabs.Screen
+        name="screenFavorites"
+        options={{
+          title: 'favorites',
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="favorite-outline" color={color} />,
+        }}
+      />
+        <Tabs.Screen
+        name="screenProfile"
+        options={{
+          title: 'profile',
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="person" color={color} />,
         }}
       />
     </Tabs>
