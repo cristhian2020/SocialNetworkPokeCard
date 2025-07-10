@@ -1,17 +1,20 @@
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import Header from '@/components/Header';
+import ImageCarrousel from '@/components/ImageCarrousel';
+import { View, Text, StyleSheet,  } from 'react-native';
 
 export default function TabScreenHome() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Tab [Home|Settings]</Text>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <Header title="PokeMarket" showIcon={true}/>
+      <ImageCarrousel/>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    // justifyContent: 'center',
     alignItems: 'center',
   },
 });

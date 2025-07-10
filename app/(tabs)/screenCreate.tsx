@@ -1,10 +1,10 @@
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function TabScreenCreate() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Text>Tcreate</Text>
-    </SafeAreaView>
+    </View>
   );
 }
 

@@ -1,5 +1,6 @@
 import {MaterialIcons } from '@expo/vector-icons/';
 import { Tabs } from 'expo-router';
+import { Platform, StatusBar } from "react-native";
 
 export default function TabLayout() {
   return (
@@ -7,6 +8,8 @@ export default function TabLayout() {
       
       tabBarActiveTintColor: 'blue',
       headerShown: false,
+     
+      
       }}>
       <Tabs.Screen
         name="index"
@@ -28,6 +31,7 @@ export default function TabLayout() {
         title: 'Create',
         tabBarIcon: ({ color }) => <MaterialIcons size={28} name="add-box" color={color} />,
       }}
+        
       />
         <Tabs.Screen
         name="screenFavorites"

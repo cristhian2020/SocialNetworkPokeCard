@@ -1,10 +1,10 @@
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function TabScreenFavorites() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Text>Tab [Home|Settings]</Text>
-    </SafeAreaView>
+    </View>
   );
 }
 
